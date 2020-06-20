@@ -1,3 +1,2 @@
-# WebDesign
-Repo for Web_design projects
+# EyeSpy
 Fictional Eye Doctor Website
