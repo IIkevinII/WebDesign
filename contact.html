@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	comments: Index.html
+	name of document: Contact Us
+	document purpose: EyeSpy Contact
+	author: Kevin Ortiz
+	date of creation: 04/15/2020 / update: 
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="" />
+	<link href="assets/ESStyle.css" rel="Stylesheet"/>
+    <link href="assets/ESBackground.css" rel="Stylesheet"/>
+	<title>EyeSpy - Contact Us</title>
+</head>
+
+    <body>
+
+        <div class="banner">
+           <header>			
+                <a href="index.html"><img id="logo" src="assets/EyeSpy.png" alt="EyeSpy Logo"/></a><h1 id="company">EyeSpy Eye Center</h1>
+
+           </header>
+        </div>
+
+        <div class="dropdown">
+           <nav>				<!-- navigation  for the drop-down menu -->
+                 <button class="dropbtn"><img class="dropdownbtn" id="menu" src="assets/ESMenu.png" alt="Dropdown_Menu"/></button>
+                 <div class="dropdown-content">
+                     <a href="index.html">Home</a>
+                     <a href="contact.html">Contact Us</a>
+                     <a href="services.html">Services</a>
+                 </div>
+           </nav>
+        </div>
+
+        <div class="heading">
+            <article>
+                <h1>How to contact us</h1>
+            </article>
+        </div>
+
+        <div id="hours"> <!--made a table for the hours of the week-->
+            <h3>Hours</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <th class="day" scope="row">Monday</th>
+                        <td>9am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th class="day" scope="row">Tuesday</th>
+                        <td>9am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th class="day" scope="row">Wednesday</th>
+                        <td>10am - 9pm</td>
+                    </tr>
+                    <tr>
+                        <th class="day" scope="row">Thursday</th>
+                        <td>9am - 10pm</td>
+                    </tr>
+                    <tr>
+                        <th class="day" scope="row">Friday</th>
+                        <td>9am - 6pm</td>
+                    </tr>
+                    <tr>
+                        <th class="day" scope="row">Saturday</th>
+                        <td>10am - 5pm</td>
+                    </tr>   
+                </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td class="center"><i>*Closed on Sunday*</i></td>
+                        </tr>
+                    </tfoot>
+            </table>
+        </div>
+
+        <div id="contact">
+            <section>			<!-- Email and phone links -->
+                <h3>Contact Us:</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th class="device" scope="row">Email:</th>
+                            <td class="links">
+                                <a href="mailto:help@eyespy.com?">help@eyespy.com</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="device" scope="row">Telephone:</th>
+                            <td class="links"><a href="tel:+1201-420-6979">201-420-6979</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </div>
+
+        <div id="form"> <!--Form for general questions and the such-->
+            <fieldset>
+                <h4 class="center">Have a Question?</h4>
+                <label>
+                    Name:<br />
+                        <input id="Nameinput" type="text" name="Name" placeholder=" nnn-nnn-nnnn" required="required" />
+                </label><br />
+                <label>
+                    Telephone:<br />
+                        <input id="phoneinput" type="tel" name="Telephone" />
+                </label><br />
+                <label>
+                    Email:<br />
+                        <input id="emailinput" type="email" name="Email" placeholder="Name@eyespy.com" required="required"/>
+                </label><br />
+                <form>
+                        <p>Please select a reason for reaching out to us:</p>
+                    <select name="reasons">
+                        <option value="Placeholder1">Corneal Refractive Therapy</option>
+                        <option value="Placeholder2">Eye Exams</option>
+                        <option value="Placeholder3">LASIK</option>
+                        <option value="Placeholder4">Ocular Disease Management</option>
+                        <option value="Placeholder5">Pediatric Eye Care</option>
+                        <option value="Placeholder6">Other</option>  
+                    </select>
+                    <p>For a reason not listed, please use this:</p>
+                    <textarea class="center" name="comments" cols="50" rows="5" placeholder="Type here.."></textarea>
+                </form>
+                <p>Please select the best way to contact you:
+                <br />
+                <input type="radio" name="type" value="Call" checked="checked" />Call
+                <input type="radio" name="type" value="Email" checked="checked" />Email
+                </p>
+            </fieldset>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+
+        <div id="map"> <!--This is for map voew of "Office"(Bergen)-->
+            <iframe 
+                    src="https://maps.google.com/maps?q=Bergen%20community%20college&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="400"
+                    height="400">
+            </iframe>
+            <a id="link" href="https://www.google.com/maps/place/Bergen+Community+College,+400+Paramus+Rd,+Paramus,+NJ+07652/@40.9508752,-74.0881824,16z/data=!4m2!3m1!1s0x89c2fb22d77d0867:0xab02a8647ecaa119" >
+                <p>400 Paramus Rd, Paramus NJ 07652</p>
+            </a>
+        </div>
+
+        <div class="footer">
+           <footer>
+              &copy; 2020-2020 &#8226; EyeSpy LLC. &#8226; All rights reserved
+           </footer>
+        </div>
+
+    </body>
+
+</html>
